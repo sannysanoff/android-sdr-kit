@@ -221,11 +221,7 @@ build_libhackrf arm64-v8a
 # Build librtlsdr
 build_librtlsdr() { # [android_abi]
     echo "===================== librtlsdr ($1) ====================="
-<<<<<<< HEAD
-    cd librtlsdr-android
-=======
     cd rtl-sdr
->>>>>>> upstream/master
     mkdir -p build_$1 && cd build_$1
     cmake $(gen_cmake_args $1) $(gen_cmake_libusb_args $1) -DBUILD_UTILITIES=OFF ..
     make $MAKEOPTS
