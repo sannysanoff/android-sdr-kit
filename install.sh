@@ -12,7 +12,7 @@ export MAKEOPTS=-j$(nproc)
 
 # Install dependencies
 apt update -y
-apt install -y wget git p7zip-full default-jdk build-essential cmake patchelf python3-mako ninja-build
+apt install -y wget git p7zip-full unzip default-jdk build-essential cmake patchelf python3-mako ninja-build
 
 # Install the Android tools
 mkdir Android
